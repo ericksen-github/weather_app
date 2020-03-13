@@ -1,0 +1,9 @@
+#mainContainer {
+  width: 30em;
+  height: 40em;
+  margin: auto;
+  margin-top: 5em;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1em;
+  color: white;
+}
