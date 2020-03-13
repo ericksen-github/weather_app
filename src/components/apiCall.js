@@ -3,8 +3,6 @@ import { passINFO } from "./passINFO";
 
 const apiFunctions = (() => {
   async function newCall(location) {
-    //const img = document.querySelector("img");
-
     if (location === "" || location === undefined) {
       location = "london";
     }
@@ -20,16 +18,16 @@ const apiFunctions = (() => {
     const info = {};
 
     info.currentTemp = (parseFloat(newData.main.temp) - 273.15).toFixed(1);
-    info.status = newData.weather[0].main;
+    info.weatherStatus = newData.weather[0].main;
 
     handleDate(info);
-    info.location = newData.main.name + ", " + newData.sys.country;
+    info.location = newData.name + ", " + newData.sys.country;
 
     info.tempHigh = (parseFloat(newData.main.temp_max) - 273.15).toFixed(1);
     info.tempLow = (parseFloat(newData.main.temp_min) - 273.15).toFixed(1);
 
-    info.humidity = newData.main.humidity + "%";
-    info.wind = newData.wind.speed + "mph";
+    info.humidity = newData.main.humidity;
+    info.wind = newData.wind.speed;
 
     passINFO(info);
   }

@@ -13,11 +13,19 @@ class MainDisplay extends Component {
       <div id="mainContainer">
         <div id="topHalf">
           <div id="graphicDiv">
-            <div id="weatherImage"></div>
+            <img
+              id="weatherGraphic"
+              src="images/overcast.png"
+              alt="Weather Graphic"
+            ></img>
             <div id="currentTemp"></div>
             <div id="weatherStatus"></div>
           </div>
-          <div id="dateDiv"></div>
+          <div id="dateContainer">
+            <div id="dayDiv"></div>
+            <div id="dateDiv"></div>
+            <div id="location"></div>
+          </div>
         </div>
         <div id="bottomHalf">
           <div id="temps">
@@ -28,7 +36,10 @@ class MainDisplay extends Component {
             <div id="humidity"></div>
             <div id="wind"></div>
           </div>
-          7<div id="searchBar"></div>
+          <div id="searchDiv">
+            <input type="text" id="searchBox" placeholder="London"></input>
+            <div id="searchButton">Search</div>
+          </div>
           <div id="degreeContainer">
             <div id="fahrenheit">F°</div>
             <div id="celsius">C°</div>
