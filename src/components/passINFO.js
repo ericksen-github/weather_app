@@ -1,4 +1,10 @@
 import { selectedTemp, changeDegree } from "./degreeChange";
+import overcastBG from "./images/overcastBG.jpeg";
+import rainBG from "./images/rainBG.jpeg";
+import snowBG from "./images/snowBG.jpg";
+import stormBG from "./images/stormBG.jpeg";
+import sunBG from "./images/sunBG.jpg";
+import sunCloudBG from "./images/sunCloudBG.jpeg";
 
 const passINFO = info => {
   document.getElementById("currentTemp").innerHTML = info.currentTemp + "° C";
@@ -22,31 +28,31 @@ const imgController = status => {
 
   if (status.indexOf("clear") >= 0 || status.indexOf("Clear") >= 0) {
     icon.src = "http://openweathermap.org/img/wn/01d@2x.png";
-    bodyBG.style.backgroundImage = "url(../images/sunBG.jpg)";
+    bodyBG.style.backgroundImage = "url(" + sunBG + ")";
   }
 
   if (status.indexOf("cloud") >= 0 || status.indexOf("Cloud") >= 0) {
     icon.src = "http://openweathermap.org/img/wn/04d@2x.png";
     if (status.indexOf("overcast") >= 0) {
-      bodyBG.style.backgroundImage = "url(../images/overcastBG.jpeg)";
+      bodyBG.style.backgroundImage = "url(" + overcastBG + ")";
     } else {
-      bodyBG.style.backgroundImage = "url(../images/sunCloudBG.jpeg)";
+      bodyBG.style.backgroundImage = "url(" + sunCloudBG + ")";
     }
   }
 
   if (status.indexOf("rain") >= 0 || status.indexOf("Rain") >= 0) {
     if (status.indexOf("thunder") >= 0 || status.indexOf("Thunder") >= 0) {
       icon.src = "http://openweathermap.org/img/wn/11n@2x.png";
-      bodyBG.style.backgroundImage = "url(../images/stormBG.jpeg)";
+      bodyBG.style.backgroundImage = "url(" + stormBG + ")";
     } else {
       icon.src = "http://openweathermap.org/img/wn/10n@2x.png";
-      bodyBG.style.backgroundImage = "url(../images/rainBG.jpeg)";
+      bodyBG.style.backgroundImage = "url(" + rainBG + ")";
     }
   }
 
   if (status.indexOf("snow") >= 0 || status.indexOf("Snow") >= 0) {
     icon.src = "http://openweathermap.org/img/wn/13d@2x.png";
-    bodyBG.style.backgroundImage = "url(../images/snowBG.jpg)";
+    bodyBG.style.backgroundImage = "url(" + snowBG + ")";
   }
 };
 
