@@ -22,31 +22,31 @@ const imgController = status => {
 
   if (status.indexOf("clear") >= 0 || status.indexOf("Clear") >= 0) {
     icon.src = "http://openweathermap.org/img/wn/01d@2x.png";
-    bodyBG.style.backgroundImage = "url(images/sunBG.jpg)";
+    bodyBG.style.backgroundImage = "url(../images/sunBG.jpg)";
   }
 
   if (status.indexOf("cloud") >= 0 || status.indexOf("Cloud") >= 0) {
     icon.src = "http://openweathermap.org/img/wn/04d@2x.png";
     if (status.indexOf("overcast") >= 0) {
-      bodyBG.style.backgroundImage = "url(images/overcastBG.jpeg)";
+      bodyBG.style.backgroundImage = "url(../images/overcastBG.jpeg)";
     } else {
-      bodyBG.style.backgroundImage = "url(images/sunCloudBG.jpeg)";
+      bodyBG.style.backgroundImage = "url(../images/sunCloudBG.jpeg)";
     }
   }
 
   if (status.indexOf("rain") >= 0 || status.indexOf("Rain") >= 0) {
     if (status.indexOf("thunder") >= 0 || status.indexOf("Thunder") >= 0) {
       icon.src = "http://openweathermap.org/img/wn/11n@2x.png";
-      bodyBG.style.backgroundImage = "url(images/stormBG.jpeg)";
+      bodyBG.style.backgroundImage = "url(../images/stormBG.jpeg)";
     } else {
       icon.src = "http://openweathermap.org/img/wn/10n@2x.png";
-      bodyBG.style.backgroundImage = "url(images/rainBG.jpeg)";
+      bodyBG.style.backgroundImage = "url(../images/rainBG.jpeg)";
     }
   }
 
   if (status.indexOf("snow") >= 0 || status.indexOf("Snow") >= 0) {
     icon.src = "http://openweathermap.org/img/wn/13d@2x.png";
-    bodyBG.style.backgroundImage = "url(images/snowBG.jpg)";
+    bodyBG.style.backgroundImage = "url(../images/snowBG.jpg)";
   }
 };
 
