@@ -1,14 +1,19 @@
+import { selectedTemp, changeDegree } from "./degreeChange";
+
 const passINFO = info => {
-  document.getElementById("currentTemp").innerHTML = info.currentTemp + "°";
-  document.getElementById("weatherStatus").innerHTML = info.weatherStatus;
+  document.getElementById("currentTemp").innerHTML = info.currentTemp + "° C";
+  document.getElementById("weatherStatus").innerHTML = info.weatherDescription;
   document.getElementById("dayDiv").innerHTML = info.day;
   document.getElementById("dateDiv").innerHTML = info.date;
   document.getElementById("location").innerHTML = info.location;
-  document.getElementById("tempHigh").innerHTML = info.tempHigh + "°";
-  document.getElementById("tempLow").innerHTML = info.tempLow + "°";
-  document.getElementById("humidity").innerHTML = info.humidity + "%";
-  document.getElementById("wind").innerHTML = info.wind + "mph";
-  imgController(info.weatherStatus);
+  document.getElementById("tempHighText").innerHTML = info.tempHigh + "° C";
+  document.getElementById("tempLowText").innerHTML = info.tempLow + "° C";
+  document.getElementById("humidityText").innerHTML = info.humidity + "%";
+  document.getElementById("windText").innerHTML = info.wind + "mph";
+  imgController(info.weatherDescription);
+  if (selectedTemp === "F") {
+    changeDegree();
+  }
 };
 
 const imgController = status => {
@@ -22,7 +27,7 @@ const imgController = status => {
 
   if (status.indexOf("cloud") >= 0 || status.indexOf("Cloud") >= 0) {
     icon.src = "http://openweathermap.org/img/wn/04d@2x.png";
-    if (status.indexOf("overcast" >= 0)) {
+    if (status.indexOf("overcast") >= 0) {
       bodyBG.style.backgroundImage = "url(images/overcastBG.jpeg)";
     } else {
       bodyBG.style.backgroundImage = "url(images/sunCloudBG.jpeg)";
