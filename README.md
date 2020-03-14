@@ -10,5 +10,4 @@ OpenWeatherMap Weather API: Weather data
 
 ### Author
 
-=====
 James Ericksen
