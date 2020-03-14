@@ -1,22 +1,28 @@
 {
   "files": {
-    "main.css": "/weather_app/static/css/main.d52e282a.chunk.css",
-    "main.js": "/weather_app/static/js/main.02a7bbb4.chunk.js",
-    "main.js.map": "/weather_app/static/js/main.02a7bbb4.chunk.js.map",
+    "main.css": "/weather_app/static/css/main.d6172497.chunk.css",
+    "main.js": "/weather_app/static/js/main.caf6a17d.chunk.js",
+    "main.js.map": "/weather_app/static/js/main.caf6a17d.chunk.js.map",
     "runtime-main.js": "/weather_app/static/js/runtime-main.207e6037.js",
     "runtime-main.js.map": "/weather_app/static/js/runtime-main.207e6037.js.map",
-    "static/js/2.e7b2c7e1.chunk.js": "/weather_app/static/js/2.e7b2c7e1.chunk.js",
-    "static/js/2.e7b2c7e1.chunk.js.map": "/weather_app/static/js/2.e7b2c7e1.chunk.js.map",
+    "static/js/2.1ccbe380.chunk.js": "/weather_app/static/js/2.1ccbe380.chunk.js",
+    "static/js/2.1ccbe380.chunk.js.map": "/weather_app/static/js/2.1ccbe380.chunk.js.map",
     "index.html": "/weather_app/index.html",
-    "precache-manifest.1c66f4e7817075752c62046d9dad5171.js": "/weather_app/precache-manifest.1c66f4e7817075752c62046d9dad5171.js",
+    "precache-manifest.29c1c9f880255aff3cb6030373936e18.js": "/weather_app/precache-manifest.29c1c9f880255aff3cb6030373936e18.js",
     "service-worker.js": "/weather_app/service-worker.js",
-    "static/css/main.d52e282a.chunk.css.map": "/weather_app/static/css/main.d52e282a.chunk.css.map",
-    "static/js/2.e7b2c7e1.chunk.js.LICENSE.txt": "/weather_app/static/js/2.e7b2c7e1.chunk.js.LICENSE.txt"
+    "static/css/main.d6172497.chunk.css.map": "/weather_app/static/css/main.d6172497.chunk.css.map",
+    "static/js/2.1ccbe380.chunk.js.LICENSE.txt": "/weather_app/static/js/2.1ccbe380.chunk.js.LICENSE.txt",
+    "static/media/overcastBG.jpeg": "/weather_app/static/media/overcastBG.ca2fd4c9.jpeg",
+    "static/media/rainBG.jpeg": "/weather_app/static/media/rainBG.2ec978cf.jpeg",
+    "static/media/snowBG.jpg": "/weather_app/static/media/snowBG.51145e7e.jpg",
+    "static/media/stormBG.jpeg": "/weather_app/static/media/stormBG.1bbe1143.jpeg",
+    "static/media/sunBG.jpg": "/weather_app/static/media/sunBG.bda2b166.jpg",
+    "static/media/sunCloudBG.jpeg": "/weather_app/static/media/sunCloudBG.e7ad90df.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.207e6037.js",
-    "static/js/2.e7b2c7e1.chunk.js",
-    "static/css/main.d52e282a.chunk.css",
-    "static/js/main.02a7bbb4.chunk.js"
+    "static/js/2.1ccbe380.chunk.js",
+    "static/css/main.d6172497.chunk.css",
+    "static/js/main.caf6a17d.chunk.js"
   ]
 }
